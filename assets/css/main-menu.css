@@ -13,18 +13,18 @@ main section.menu img {
 
 main section.menu h2 {
     color: var(--dark-orange);
-    font-size: 30px;
+    font-size: 200%;
 } 
 
 main section.menu h3 {
     letter-spacing: 0.02em;
-    font-size: 30px;
+    font-size: 200%;
     padding-bottom: 4px;
 } 
 
 main section.menu p {
     color: #bababa;
-    font-size: 25px;
+    font-size: 120%;
     padding-bottom: 2px;
 } 
 
@@ -54,6 +54,7 @@ main section.menu div.contador div {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 120%;
 }
 
 main section.menu div.contador div:focus {
