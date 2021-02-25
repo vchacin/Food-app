@@ -6,29 +6,25 @@
 @import url('main-compra.css');
 @import url('footer.css');
 
-@media (min-width: 675px){
+@media (max-width: 675px){
 
   body{
     margin: 50px
   }
 
-    header img{
-      width: 200px;
-    }
+  header img{
+    width: 200px;
+  }
 
-    header p{
-      color: lightgray;
-    }
-
-    
-
-
+  header p{
+    color: lightgray;
+  }
 }
 
 
 :root {
     /* Colors */
-    --gamba: ##FF6B01;
+    --gamba: #FF6B01;
     --dark-orange: #D86F20;
     --light-gray:#FAFAFA;
     --gray: #DADADC;

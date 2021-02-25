@@ -1,8 +1,61 @@
+main section.menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
 main section.menu img {
     filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.15));
     border-radius: 10px;
+    width: 264px;
+    height: 264px;;
 } 
 
 main section.menu h2 {
     color: var(--dark-orange);
-}   
+    font-size: 30px;
+} 
+
+main section.menu h3 {
+    letter-spacing: 0.02em;
+    font-size: 30px;
+    padding-bottom: 4px;
+} 
+
+main section.menu p {
+    color: #bababa;
+    font-size: 25px;
+    padding-bottom: 2px;
+} 
+
+main section.menu div.contador {
+    display: flex;
+    width: 150px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.07));
+    font-size: 30px;
+    color: var(--warm-black);
+    font-weight: 900;
+}
+
+main section.menu div.contador p{
+    background-color: var(--gray);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--warm-black);
+}
+
+main section.menu div.contador div {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section.menu div.contador div:focus {
+    background-color: var(--gray);
+}
