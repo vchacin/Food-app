@@ -1,0 +1,16 @@
+
+nav{
+    position: relative;
+    display:flex;
+    justify-content:space-around;
+}
+.slider{
+    width: 91.95px;
+    height: 114px;
+    left: 24px;
+    top: 198px;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+    border-radius: 15px;
+    border: none;
+}
