@@ -1,0 +1,60 @@
+footer {
+    width: 100%;
+    max-width: ;
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    background-color: aqua;
+}
+
+.gray {
+    color: var(--gray);
+    padding-top: 20px;
+}
+
+.btn-compra {
+    background-color: var(--gamba);
+    color: white;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 0%;
+    right: 2%; 
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.58);
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}  
+
+
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+  }
+  footer section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+  }
+  .left li {
+    margin: 10px 0;
+  }
+  .left a {
+    text-decoration: none;
+    color: var(--just-white);
+  }
