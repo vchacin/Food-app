@@ -1,0 +1,8 @@
+main section.menu img {
+    filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.15));
+    border-radius: 10px;
+} 
+
+main section.menu h2 {
+    color: var(--dark-orange);
+}   
