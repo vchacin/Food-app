@@ -1,17 +1,14 @@
 footer {
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
     max-width:100%;
     display: flex;
     justify-content: space-around;
-    height: 120px; 
-    background-color: ;  
+    height: 200px;
     border-color:  #e48fb2;
     border-style: dotted;
 }
-
-
 
 .gray {
     color: var(--gray);
@@ -22,17 +19,16 @@ footer {
     background-color: #FF6B01;
     color: white;
     position: absolute;
-    width: 70px;
-    height: 71px;
+    width: 120px;
+    height: 120px;
     top: -20%;
-    right: 46%; 
-    border-radius: 50px;
+    border-radius: 100px;
     text-align: center;
-    font-size: 30px;
     box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.58);
     z-index: 100;
+	left: calc(50% - 50px);
 }
 
 .my-float {
-    margin-top: 20px;
+    margin-top: 30px;
 }  
