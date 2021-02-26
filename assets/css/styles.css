@@ -45,5 +45,12 @@ body {
     max-width: 1000px;
 }
 
+.display1 {
+  display: none;
+}
+
+.display2 {
+  display: inline-block;
+}
 
 
