@@ -8,15 +8,15 @@
     </head>
     <body>
         <header> 
-            
+            <div class="hide">
                 <img src="assets/img/logo.png" alt="logo">
-            <div class= "titulo">
-                <h1>Comida a domicilio</h1>
-                <p>Los pucheros de tu abuelita en 20 min o gratis :)</p>
+                <div class= "titulo">
+                    <h1>Comida a domicilio</h1>
+                    <p>Los pucheros de tu abuelita en 20 min o gratis :)</p>
+                </div>
             </div>
-    
         
-             <nav>
+             <nav class="hide">
                 <button class= "slider">
                      <img src="assets/img/desayuno.png" alt="desayuno">
                      <p>Desayunos</p>
@@ -136,13 +136,13 @@
 
         </main>
 
-        <footer>
+        <footer class="hide">
                 <i class="fas fa-home gray fa-4x"></i>
                 <div class="btn-compra">
-                    <i class="fas fa-shopping-cart my-float fa-4x"></i>
+                    <i class="fas fa-shopping-cart my-float fa-4x" onclick="compra()"></i>
                 </div>
                 <i class="fas fa-user gray fa-4x"></i>
         </footer>
-
+        <script src="assets/js/scripts.js"></script>
     </body>
 </html>

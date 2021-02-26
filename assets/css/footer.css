@@ -1,5 +1,5 @@
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     max-width:100%;
@@ -13,6 +13,7 @@ footer {
 .gray {
     color: var(--gray);
     padding-top: 20px;
+    cursor: pointer;
 }
 
 .btn-compra {
@@ -27,6 +28,7 @@ footer {
     box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.58);
     z-index: 100;
 	left: calc(50% - 50px);
+    cursor: pointer;
 }
 
 .my-float {
