@@ -64,6 +64,7 @@
       font-size: 120%;
   }
 
+<<<<<<< HEAD
   footer {
     height: 50px;
     padding-top: 20px;
@@ -73,6 +74,12 @@
     color: var(--gray);
     padding-top: 20px;
     cursor: pointer;
+=======
+  footer{
+    position: relative;
+    background-color: aqua;
+  }
+>>>>>>> aeff42d334f3283808e42cda7565af808ec045bc
 }
 
 .btn-compra {

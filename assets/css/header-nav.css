@@ -5,12 +5,15 @@ nav{
     justify-content:space-around;
 }
 .slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
     font-family: "Sora";
-    font-size: 10px;
+    font-size: 24px;
     background-size: auto;
-    width: 70px;
-    height: 90px;
+    width: 190px;
+    height: 200px;
     left: 24px;
     top: 198px;
     background: #FFFFFF;
@@ -19,8 +22,21 @@ nav{
     border: none;
 }
 
+.slider p{
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
 nav img {
+<<<<<<< HEAD
     width: 80%;
     top: 9px;
     border-radius: 0px;
 }
+=======
+    
+    width: 100%;
+
+}
+
+>>>>>>> aeff42d334f3283808e42cda7565af808ec045bc

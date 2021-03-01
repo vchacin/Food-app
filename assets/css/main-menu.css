@@ -23,8 +23,8 @@ main section.menu h3 {
 } 
 
 main section.menu p {
-    color: #bababa;
-    font-size: 120%;
+    color: gray;
+    font-size: 170%;
     padding-bottom: 2px;
 } 
 
