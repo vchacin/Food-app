@@ -18,6 +18,10 @@
     background: orange;
   }
 
+  header {
+    height: 100px;
+  }
+
   header img {
     width: 10%;
   }
@@ -27,19 +31,28 @@
   }
 
   header div p {
-    font-size: 12px;
+    font-size: 16px;
+  }
+
+  nav {
+    margin-left: auto;
+    margin-right: auto;
+    height: 110px;
   }
 
   .slider{
-    font-size: 24px;
-    width: 80px;
-    height: 100px;
-    left: 24px;
+    font-size: 14px;
+    width: 130px;
+    height: 90px;
+  }
+
+  nav img {
+    width: 50%;
+    border-radius: 0px;
   }
 
   main {
-    height: 100px;
-    position: relative;
+    height: 600px;
   }
 
   main section.menu img {
@@ -78,7 +91,6 @@
   footer {
     height: 90px;
     padding-top: 20px;
-    margin: 2% 5%;
   }
 
   .btn-compra {
@@ -94,7 +106,6 @@
   footer i {
     font-size: 25px;
   }
-
 
 } 
 
@@ -119,34 +130,20 @@
 }
 
 html {
-  min-height: 100%;
   position: relative;
   height: 100vh;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 body {
   font-family: 'Sora', sans-serif;
   min-width: 320px;
-  max-width: 1000px;
   margin-top: 0;
 }
 
-.display1 {
-  display: none;
-}
-
-.display2 {
-  display: inline-block;
-}
-
 main {
-  overflow: scroll;
-  height: 900px;
+  overflow-y: scroll;
+  max-height: 1600px;
   margin: 2% 5%;
-  scroll-behavior: auto;
 }
 
 

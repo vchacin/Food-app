@@ -1,11 +1,12 @@
 
 nav {
-    width: 100%;
     position: relative;
     display:flex;
     justify-content: space-around;
     overflow-x: scroll;
     max-width: 1000px;
+    height: 150px;
+    display: inline-block;
 }
 
 .slider{
@@ -19,21 +20,18 @@ nav {
     width: 190px;
     height: 205px;
     left: 24px;
-    top: 198px;
     background: #FFFFFF;
     box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     border: none;
-    overflow-x: scroll;
+    padding: 1%;
 }
 
 .slider p{
-    margin-bottom: 15px;
-    margin-top: 10px;
+    margin: 0 10px;
 }
 
 nav img {
     width: 80%;
-    top: 9px;
     border-radius: 0px;
 }
