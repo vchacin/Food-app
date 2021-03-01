@@ -20,6 +20,11 @@
   header p{
     color: lightgray;
   }
+
+  footer{
+    position: relative;
+    background-color: aqua;
+  }
 }
 
 
