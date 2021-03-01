@@ -27,6 +27,13 @@
     font-size: 12px;
   }
 
+  .slider{
+    font-size: 24px;
+    width: 80px;
+    height: 100px;
+    left: 24px;
+  }
+
   main {
     height: 100px;
   }
@@ -64,38 +71,25 @@
       font-size: 120%;
   }
 
-<<<<<<< HEAD
   footer {
-    height: 50px;
+    height: 90px;
     padding-top: 20px;
-}
-
-.gray {
-    color: var(--gray);
-    padding-top: 20px;
-    cursor: pointer;
-=======
-  footer{
-    position: relative;
-    background-color: aqua;
   }
->>>>>>> aeff42d334f3283808e42cda7565af808ec045bc
-}
 
-.btn-compra {
-    width: 150px;
-    height: 150px;
-    top: -30%;
-  	left: calc(50% - 60px);
-}
+  .btn-compra {
+      width: 70px;
+      height: 70px;
+      top: -30%;
+      left: calc(50% - 60px);
+  }
 
-.my-float {
-    margin-top: 45px;
-}  
+  .my-float {
+      margin-top: 25px;
+  }  
 
-footer i {
-  font-size: 30px;
-}
+  footer i {
+    font-size: 25px;
+  }
 
 
 } 
@@ -147,7 +141,7 @@ body {
 main {
   overflow: scroll;
   height: 900px;
-  margin: 5%;
+  margin: 2% 5%;
   scroll-behavior: auto;
 }
 
