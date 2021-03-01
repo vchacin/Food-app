@@ -1,9 +1,13 @@
 
 nav{
     position: relative;
-    display:flex;
-    justify-content:space-around;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    flex-wrap: nowrap;
 }
+
 .slider{
     display: flex;
     flex-direction: column;
@@ -28,15 +32,7 @@ nav{
 }
 
 nav img {
-<<<<<<< HEAD
     width: 80%;
     top: 9px;
     border-radius: 0px;
 }
-=======
-    
-    width: 100%;
-
-}
-
->>>>>>> aeff42d334f3283808e42cda7565af808ec045bc
