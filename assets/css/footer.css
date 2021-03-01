@@ -1,12 +1,17 @@
 footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
+<<<<<<< HEAD
     height: 150px;
+=======
+    height: 250px;
+>>>>>>> 6b1e91538f05ef2c447c303683e40648bb4e3eff
     border-top:1px solid lightgrey;
     padding-top: 30px;
+    background-color: #fff;
 }
 
 footer i {
