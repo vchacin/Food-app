@@ -28,8 +28,15 @@ nav{
 }
 
 nav img {
+<<<<<<< HEAD
+    width: 80%;
+    top: 9px;
+    border-radius: 0px;
+}
+=======
     
     width: 100%;
 
 }
 
+>>>>>>> aeff42d334f3283808e42cda7565af808ec045bc
