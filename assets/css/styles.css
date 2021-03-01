@@ -89,7 +89,13 @@
   footer {
     height: 90px;
     padding-top: 20px;
-  }
+}
+
+.gray {
+    color: var(--gray);
+    padding-top: 20px;
+    cursor: pointer;
+}
 
   .btn-compra {
       width: 70px;
@@ -143,5 +149,6 @@ main {
   max-height: 1600px;
   margin: 2% 5%;
 }
+
 
 
