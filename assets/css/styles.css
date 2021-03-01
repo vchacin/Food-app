@@ -6,22 +6,97 @@
 @import url('main-compra.css');
 @import url('footer.css');
 
-@media (max-width: 700px){
 
-  body{
-    margin-left: auto;
-    margin-right: auto;
+/* Medium devices (landscape tablets, 768px and up) */
+/*@media only screen and (min-width: 768px) {
+  body {background: blue;}
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background: orange;
+  }
+  header img {
+    width: 10%;
+  }
+  header div h1 {
+    font-size: 18px;
+  }
+  header div p {
+    font-size: 12px;
   }
 
-  header img{
-    width: 200px;
+  main {
+    height: 100px;
   }
 
-  header p{
-    color: lightgray;
+  main section.menu img {
+    width: 164px;
+    height: 164px;;
+  } 
+
+  main section.menu h2 {
+      font-size: 100%;
+  } 
+
+  main section.menu h3 {
+      font-size: 100%;
+  } 
+
+  main section.menu p {
+      font-size: 70%;
+  } 
+
+  main section.menu div.contador {
+      width: 90px;
+      font-size: 15px;
   }
+
+  main section.menu div.contador p{
+      width: 30px;
+      height: 30px;
+  }
+
+  main section.menu div.contador div {
+      width: 30px;
+      height: 30px;
+      font-size: 120%;
+  }
+
+  footer {
+    height: 50px;
+    padding-top: 20px;
 }
 
+.gray {
+    color: var(--gray);
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.btn-compra {
+    width: 150px;
+    height: 150px;
+    top: -30%;
+  	left: calc(50% - 60px);
+}
+
+.my-float {
+    margin-top: 45px;
+}  
+
+footer i {
+  font-size: 30px;
+}
+
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*@media only screen and (min-width: 1200px) {
+  body {background: pink;}
+}*/
 
 :root {
     /* Colors */
@@ -42,6 +117,9 @@ html {
   min-height: 100%;
   position: relative;
   height: 100vh;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -61,7 +139,9 @@ body {
 
 main {
   overflow: scroll;
-  height: calc(50% - 2px);
+  height: 900px;
+  margin: 5%;
+  scroll-behavior: auto;
 }
 
 

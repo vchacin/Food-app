@@ -1,12 +1,16 @@
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    height: 250px;
+    height: 150px;
     border-top:1px solid lightgrey;
     padding-top: 30px;
+}
+
+footer i {
+    font-size: 60px;
 }
 
 .gray {
@@ -33,3 +37,4 @@ footer {
 .my-float {
     margin-top: 45px;
 }  
+
