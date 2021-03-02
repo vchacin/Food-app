@@ -19,7 +19,7 @@
   }
 
   header {
-    height: 100px;
+    height: 120px;
   }
 
   header img {
@@ -36,6 +36,8 @@
 
   nav {
     height: 110px;
+    overflow-x: hidden;
+    margin-left: 60px;
   }
 
   .slider{
@@ -50,7 +52,7 @@
   }
 
   main {
-    height: 600px;
+    height: 200px;
   }
 
   main section.menu img {
