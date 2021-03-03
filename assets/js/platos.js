@@ -99,10 +99,12 @@ let arrayMenu = [{
     },
 ];
 
+let menuDiv = "";
+
 function imprimirMenu () {
-    let menuDiv = "";
-    for (i=0; i < arrayMenu.length; i++) {
-        menuDiv+= "<section class='menu ${arrayMenu[i].categoria}'>
+    for (let i = 0; i < arrayMenu.length; i++) {
+        menuDiv += ' 
+         <section class ="menu ${arrayMenu[i].categoria">
                         <img src='${arrayMenu[i].imgComida}' alt='curry'>
                         <div>
                             <h2>${arrayMenu[i].precioComida}</h2>
@@ -114,8 +116,9 @@ function imprimirMenu () {
                                 <div>+</div>
                             </div>
                         </div>
-                    </section>"
+                    </section> ' 
     }
+
     document.querySelector(".contenedor-menu").innerHTML = menuDiv;
 }
 
