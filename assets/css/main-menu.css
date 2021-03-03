@@ -1,11 +1,11 @@
-main section.menu {
+section.menu {
     display: flex;
-    width: 80%;
+    width: 90%;
     align-items: center;
     margin: 20px;
 }
 
-main section.menu img {
+section.menu img {
     filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.15));
     border-radius: 40px;
     width: 264px;
@@ -13,24 +13,24 @@ main section.menu img {
     margin: 20px;
 } 
 
-main section.menu h2 {
+section.menu h2 {
     color: var(--dark-orange);
     font-size: 200%;
 } 
 
-main section.menu h3 {
+section.menu h3 {
     letter-spacing: 0.02em;
     font-size: 200%;
     padding-bottom: 4px;
 } 
 
-main section.menu p {
+section.menu p {
     color: gray;
     font-size: 170%;
-    padding-bottom: 2px;
+    margin-bottom: 10px;
 } 
 
-main section.menu div.contador {
+section.menu div.contador {
     display: flex;
     width: 150px;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.07));
@@ -39,7 +39,7 @@ main section.menu div.contador {
     font-weight: 900;
 }
 
-main section.menu div.contador p{
+section.menu div.contador p{
     background-color: var(--gray);
     width: 50px;
     height: 50px;
@@ -49,7 +49,7 @@ main section.menu div.contador p{
     color: var(--warm-black);
 }
 
-main section.menu div.contador div {
+section.menu div.contador div {
     background-color: #fff;
     width: 50px;
     height: 50px;
