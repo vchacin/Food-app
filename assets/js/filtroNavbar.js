@@ -1,11 +1,9 @@
-function filtroCategorias (categoriaSlide) {
-    categoriaTxt= document.querySelector(".slider p").innerHTML;
-    console.log(categoriaTxt);
+function filtroCategorias (categoria) {
     let menuFiltrado = "";
 
     function imprimirMenu () {
         for (let i = 0; i < arrayMenu.length; i++) {
-            if(categoriaTxt === arrayMenu[i].categoriaComida){
+            if(categoria === arrayMenu[i].categoriaComida){
                 menuFiltrado+= `<section class="menu ${arrayMenu[i].categoriaComida}">
                                     <img src="${arrayMenu[i].imgComida}" alt="${arrayMenu[i].alt}">
                                     <div class="descripcion-menu">

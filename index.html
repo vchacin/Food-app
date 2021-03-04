@@ -9,7 +9,7 @@
     <body>
         <header> 
             <div class="infoHome">
-                <img src="assets/img/logo.png" alt="logo">
+                <img src="assets/img/logo.png" alt="logo" onclick="imprimirMenu()">
                 <div class= "titulo">
                     <h1>Comida a domicilio</h1>
                     <p>Los pucheros de tu abuelita en 20 min o gratis :)</p>
@@ -28,32 +28,32 @@
         </header>
 
         <nav class="infoHome">
-            <button class= "slider">
-                 <img src="assets/img/desayuno.png" alt="desayuno">
+            <button class= "slider" onclick="filtroCategorias('Desayunos')">
+                 <img src="assets/img/desayuno.png" alt="desayunos">
                  <p>Desayunos</p>
             </button>
 
-            <button class= "slider" onclick="filtroCategorias()">
+            <button class= "slider" onclick="filtroCategorias('Comidas')">
                 <img src="assets/img/rapida.png" alt="comidas">
                 <p>Comidas</p>
            </button>
 
-           <button class= "slider" onclick="filtroCategorias()">
+           <button class= "slider" onclick="filtroCategorias('Cenas')">
                 <img src="assets/img/cena.png" alt="cena">
                 <p>Cenas</p>
             </button>
 
-            <button class= "slider" onclick="filtroCategorias()">
+            <button class= "slider" onclick="filtroCategorias('Postres')">
                 <img src="assets/img/postre.png" alt="postres">
                 <p>Postres</p>
             </button>
 
-            <button class= "slider" onclick="filtroCategorias()">
+            <button class= "slider" onclick="filtroCategorias('Bebidas')">
                 <img src="assets/img/cocktails.svg" alt="bebidas">
                 <p>Bebidas</p>
             </button>
 
-            <button class= "slider" onclick="filtroCategorias()">
+            <button class= "slider" onclick="filtroCategorias('Entrantes')">
                 <img src="assets/img/mate.svg" alt="entrantes">
                 <p>Entrantes</p>
             </button>
