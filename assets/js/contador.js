@@ -1,17 +1,21 @@
-//PONE EL CONTADOR A 0
-let count_click = 0;
+let counterDisplayElem = document.querySelector('.counter-display');
+let counterMinusElem = document.querySelector('.counterLeft');
+let counterPlusElem = document.querySelector('.counterRight');
 
-//AÑADE UN CLICK AL EJECUTAR LA FUNCIÓN
-function count_click_add() {
-  count_click += 1;
-}
+let count = 0;
 
-//MUESTRA CUANTOS CLICK LLEVAMOS
-$("#count_click").text(count_click);
+updateDisplay();
 
-//AÑADE A TODOS LOS BOTONES CON EL NAME count_click QUE AL SER PULSADOS EJECUTEN EL CONTADOR
-$( document ).ready(function(){
-  $("button[name='count_click']").click(function(){
-     count_click_add();
-  });
-});
+function suma() {
+    count++;
+    updateDisplay();
+};
+
+function resta() {
+    count--;
+    updateDisplay();
+};
+
+function updateDisplay(){
+    counterDisplayElem.innerHTML = count;
+};
