@@ -1,12 +1,11 @@
-main section.compra {
-    display: none;
-    position: absolute;
+main section div.compra {
+    position: relative;
     bottom: 0;
     width: 100%;
 }
 
 
-main section.compra table {
+main section div.compra table {
     width: 100%;
     background-color: var(--gamba);
     border-radius: 80px 80px 0 0;
@@ -14,20 +13,20 @@ main section.compra table {
     padding: 100px 60px;
 }
 
-main section.compra table tr {
+main section div.compra table tr {
     height: 70px;
 }
 
-main section.compra table p {
+main section div.compra table p {
     color: rgba(255, 255, 255, 0.7);
 }
 
-main section.compra table h4 {
+main section div.compra table h4 {
     text-align: right;
     color: #fff;
 }
 
-main section.compra table button {
+main section div.compra table button {
     border: none;
     width: 100%;
     display: flex;

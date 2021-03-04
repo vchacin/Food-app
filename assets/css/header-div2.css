@@ -1,8 +1,8 @@
 header div.header-list {
-    display: none;
+    display: flex;
     width: 100%;
     justify-content: space-between;
-    color: #646464;
+  
 
 }
 
@@ -15,3 +15,5 @@ header div.header-list div{
     justify-content: center;
     align-items: center;
 }
+
+

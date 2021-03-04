@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
         <link rel="icon" href="assets/img/gamba.ico" type="image/x-icon">
@@ -7,25 +7,28 @@
         <title>Gamba | Delivery</title> 
     </head>
     <body>
-        <header class="hide"> 
-            <div>
+        <header> 
+            <div class="infoHome">
                 <img src="assets/img/logo.png" alt="logo">
                 <div class= "titulo">
                     <h1>Comida a domicilio</h1>
                     <p>Los pucheros de tu abuelita en 20 min o gratis :)</p>
                 </div>
             </div>
-   
+            <div class="infoCompra">
             <div class="header-list">
+              
                 <div>
-                    <i class="fas fa-chevron-left fa-3x"></i>
+                    <i class="fas fa-chevron-left fa-3x" onclick="getBack()"></i>
                 </div>
+
                 <i class="far fa-trash-alt fa-3x"></i>
             </div>
+        </div>
         </header>
 
-        <nav>
-            <button class= "slider" onclick="filtroCategorias()">
+        <nav class="infoHome">
+            <button class= "slider">
                  <img src="assets/img/desayuno.png" alt="desayuno">
                  <p>Desayunos</p>
             </button>
@@ -57,54 +60,55 @@
         </nav>
         
         <main>
-            <div class="contenedor-menu">
 
-            </div>
+            <div class="contenedor-menu"></div>
 
-            <section class="compra">
-                <table>
-                    <tr>
-                        <td>
-                            <p>Subtotal</p>
-                        </td>
-                        <td>
-                            <h4>$96.00</h4>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Impuestos</p>
-                        </td>
-                        <td>
-                            <h4>$2.00</h4>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Envío</p>
-                        </td>
-                        <td>
-                            <h4>Gratis</h4>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>TOTAL</p>
-                        </td>
-                        <td>
-                            <h4>$98.00</h4>
-                        </td>
-                    </tr>
-                    <tr class="btn">
-                        <td colspan = "2">
-                            <button>Enviar pedido</button>
-                        </td>
-                    </tr>
-                </table>
+            <section class="infoCompra">
+                <div class="compra">
+                    <table>
+                        <tr>
+                            <td>
+                                <p>Subtotal</p>
+                            </td>
+                            <td>
+                                <h4>$96.00</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Impuestos</p>
+                            </td>
+                            <td>
+                                <h4>$2.00</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Envío</p>
+                            </td>
+                            <td>
+                                <h4>Gratis</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>TOTAL</p>
+                            </td>
+                            <td>
+                                <h4>$98.00</h4>
+                            </td>
+                        </tr>
+                        <tr class="btn">
+                            <td colspan = "2">
+                                <button>Enviar pedido</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </section>
         </main>
 
-        <footer class="hide">
+        <footer class="infoHome">
                 <i class="fas fa-home gray"></i>
                 <div class="btn-compra">
                     <i class="fas fa-shopping-cart my-float" onclick="compra()"></i>

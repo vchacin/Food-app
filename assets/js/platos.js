@@ -102,6 +102,8 @@ let arrayMenu = [{
     },
 ];
 
+let menuDiv = "";
+
 function imprimirMenu () {
     let menuDiv = "";
     for (let i = 0; i < arrayMenu.length; i++) {
@@ -119,6 +121,7 @@ function imprimirMenu () {
                         </div>
                     </section>`; 
     }
+
     document.querySelector(".contenedor-menu").innerHTML = menuDiv;
 }
 
