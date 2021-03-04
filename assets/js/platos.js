@@ -16,7 +16,7 @@ let arrayMenu = [{
         descripcionComida: "Con salsa de queso",
         cantidad: 0,
         alt: "Ensalada de pollo",
-        categoriaComida: "Cenas"
+        categoriaComida: "Comidas"
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ let arrayMenu = [{
         descripcionComida: "Con carne de tocino",
         cantidad: 0,
         alt: "Patatas",
-        categoriaComida: "Rapidas"
+        categoriaComida: "Comidas"
     },
 
     {
@@ -48,7 +48,7 @@ let arrayMenu = [{
         descripcionComida: "Con cubierta de caramelo",
         cantidad: 0,
         alt: "Flan de vainilla",
-        categoriaComida: "Postres"
+        categoriaComida: "Desayunos"
     },
     {
         id: 6,
@@ -68,7 +68,7 @@ let arrayMenu = [{
         descripcionComida: "De locro y humita",
         cantidad: 0,
         alt: "Empanada argentina",
-        categoriaComida: "Desayuno"
+        categoriaComida: "Desayunos"
     },
     {
         id: 8,
@@ -98,7 +98,7 @@ let arrayMenu = [{
         descripcionComida: "Con frutas frescas",
         cantidad: 0,
         alt: "Yogur con frutas",
-        categoriaComida: "Postres"
+        categoriaComida: "Desayunos"
     },
 ];
 
