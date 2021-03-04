@@ -3,6 +3,7 @@ section.menu {
     width: 90%;
     align-items: center;
     margin: 20px;
+    transition: all .4s;
 }
 
 section.menu img {
