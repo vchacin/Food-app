@@ -1,17 +1,10 @@
-//PONE EL CONTADOR A 0
-let count_click = 0;
+let contador=0;
 
-//AÑADE UN CLICK AL EJECUTAR LA FUNCIÓN
-function count_click_add() {
-  count_click += 1;
+function resta() {
+ contador --;
+ actualizarNumero();
 }
 
-//MUESTRA CUANTOS CLICK LLEVAMOS
-$("#count_click").text(count_click);
-
-//AÑADE A TODOS LOS BOTONES CON EL NAME count_click QUE AL SER PULSADOS EJECUTEN EL CONTADOR
-$( document ).ready(function(){
-  $("button[name='count_click']").click(function(){
-     count_click_add();
-  });
-});
+function actualizarNumero (){
+  document.getElementsByClassName(contadorDisplay).innerHTML = contador;
+}
