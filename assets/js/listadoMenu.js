@@ -114,9 +114,9 @@ function imprimirMenu () {
                             <h3>${arrayMenu[i].nombreComida}</h3>
                             <p>${arrayMenu[i].descripcionComida}</p>
                             <div class="contador">
-                                <div onclick="resta()">-</div>
-                                <p class="contadorDisplay">0</p>
-                                <div onclick="suma()">+</div>
+                                <button class="counterLeft" onclick="resta()">-</button>
+                                <p class="counter-display">0</p>
+                                <button class="counterRight" onclick="()">+</button>
                             </div>
                         </div>
                     </section>`; 
