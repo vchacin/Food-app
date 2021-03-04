@@ -142,8 +142,8 @@ body {
 
 main {
   overflow-y: scroll;
-  max-height: 1000px;
-  margin: 2% 5%;
+  max-height: 1600px;
+  margin: 2% 0%;
 }
 
 .infoCompra{
