@@ -114,9 +114,9 @@ function imprimirMenu () {
                             <h3>${arrayMenu[i].nombreComida}</h3>
                             <p>${arrayMenu[i].descripcionComida}</p>
                             <div class="contador">
-                                <button class="counterLeft" onclick="resta()">-</button>
-                                <p class="counter-display">0</p>
-                                <button class="counterRight" onclick="()">+</button>
+                                <button class="counter-resta" onclick="actualizarValorContador('contador-${arrayMenu[i].id}','-')">-</button>
+                                <p id="contador-${arrayMenu[i].id}" class="counter-display">0</p>
+                                <button class="counter-suma" onclick="actualizarValorContador('contador-${arrayMenu[i].id}','+')">+</button>
                             </div>
                         </div>
                     </section>`; 
@@ -126,3 +126,4 @@ function imprimirMenu () {
 }
 
 imprimirMenu ();
+// console.log(arrayMenu.filter(producto => producto.nombreComida == "Yogur Tropical"));

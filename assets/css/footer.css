@@ -1,5 +1,5 @@
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 250px;
@@ -34,7 +34,7 @@ footer .contenedor .gray {
     text-align: center;
     box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.58);
     z-index: 100;
-	left: calc(50% - 70px);
+	left: calc(50% - 60px);
     cursor: pointer;
 }
 

@@ -4,6 +4,22 @@ section.menu {
     align-items: center;
     margin: 20px;
     transition: all .4s;
+    border-radius: 50px;
+    border: none;
+}
+
+section.menu:hover {
+    border:3px solid var(--gamba);
+    animation: moverDerecha 1s;
+    animation-fill-mode: forwards;  
+}
+@keyframes moverDerecha {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(60px);
+    }
 }
 
 section.menu img {

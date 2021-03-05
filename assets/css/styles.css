@@ -9,7 +9,7 @@
 
 @media only screen and (min-width: 992px) {
   body {
-    max-width: 1200px;
+    height: 100vh;
   }
 
   header {
@@ -35,7 +35,7 @@
   }
 
   nav {
-    height: 110px;
+    height: 120px;
     overflow-x: hidden;
     width: 100%;
   }
@@ -43,7 +43,11 @@
   .slider{
     font-size: 14px;
     width: 130px;
-    height: 90px;
+    height: 100px;
+  }
+
+  .slider p {
+    margin-top: 10px;
   }
 
   nav img {
@@ -51,12 +55,20 @@
     border-radius: 0px;
   }
 
-  main {
+  main{
+    width: 100%;
+    height: 450px;
+  }
+
+  section.menu {
+    margin-bottom: 1px;
+    margin-top: 1px;
   }
 
   main section.menu img {
-    width: 164px;
-    height: 164px;;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
   } 
 
   main section.menu h2 {
@@ -81,7 +93,7 @@
       height: 30px;
   }
 
-  main section.menu div.contador div {
+  main section.menu div.contador button {
       width: 30px;
       height: 30px;
       font-size: 120%;
@@ -90,6 +102,10 @@
   footer {
     height: 80px;
     padding-top: 10px;
+  }
+
+  footer .contenedor i {
+    font-size: 30px;
   }
 
   .gray {
@@ -137,13 +153,31 @@ html {
 body {
   font-family: 'Sora', sans-serif;
   min-width: 320px;
+  max-width: 1000px;
   margin-top: 0;
+  height: 100vh;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main {
   overflow-y: scroll;
-  max-height: 1000px;
+  max-height: 1200px;
   margin: 2% 0%;
+}
+
+main::-webkit-scrollbar {
+  width: 12px;           
+}
+
+main::-webkit-scrollbar-track {
+  background: transparent;      
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: var(--gamba);  
+  border-radius: 20px;     
 }
 
 .infoCompra{
