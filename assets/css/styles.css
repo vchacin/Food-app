@@ -1,8 +1,188 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
-@import url('header.css');
-@import url('main-styles.css');
+@import url('header-div.css');
+@import url('header-nav.css');
+@import url('header-div2.css');
+@import url('main-menu.css');
+@import url('main-compra.css');
 @import url('footer.css');
 
-body {
-    font-family: 'Sora', sans-serif;
+
+@media only screen and (min-width: 992px) {
+  body {
+    height: 100vh;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  header img {
+    width: 10%;
+    margin-bottom: 0;
+  }
+
+  header div h1 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .titulo h1 {
+    margin-bottom: 0;
+  }
+
+  header div p {
+    font-size: 16px;
+  }
+
+  nav {
+    height: 120px;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .slider{
+    font-size: 14px;
+    width: 130px;
+    height: 100px;
+  }
+
+  .slider p {
+    margin-top: 10px;
+  }
+
+  nav img {
+    width: 50%;
+    border-radius: 0px;
+  }
+
+  main{
+    width: 100%;
+    height: 450px;
+  }
+
+  section.menu {
+    margin-bottom: 1px;
+    margin-top: 1px;
+  }
+
+  main section.menu img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  } 
+
+  main section.menu h2 {
+      font-size: 100%;
+  } 
+
+  main section.menu h3 {
+      font-size: 100%;
+  } 
+
+  main section.menu p {
+      font-size: 70%;
+  } 
+
+  main section.menu div.contador {
+      width: 90px;
+      font-size: 15px;
+  }
+
+  main section.menu div.contador p{
+      width: 30px;
+      height: 30px;
+  }
+
+  main section.menu div.contador button {
+      width: 30px;
+      height: 30px;
+      font-size: 120%;
+  }
+
+  footer {
+    height: 80px;
+    padding-top: 10px;
+  }
+
+  footer .contenedor i {
+    font-size: 30px;
+  }
+
+  .gray {
+    color: var(--gray);
+    padding-top: 20px;
+    cursor: pointer;
+  }
+
+  .btn-compra {
+    width: 70px;
+    height: 70px;
+    top: -30%;
+  }
+
+  .my-float {
+      margin-top: 25px;
+  }  
+
+  footer i {
+    font-size: 25px;
+  }
+
+} 
+
+:root {
+    /* Colors */
+    --gamba: #FF6B01;
+    --dark-orange: #D86F20;
+    --light-gray:#FAFAFA;
+    --gray: #DADADC;
+    --warm-black: #282828;
+  }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+html {
+  position: relative;
+  height: 100vh;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  min-width: 320px;
+  max-width: 1000px;
+  margin-top: 0;
+  height: 100vh;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  overflow-y: scroll;
+  max-height: 1200px;
+  margin: 2% 0%;
+}
+
+main::-webkit-scrollbar {
+  width: 12px;           
+}
+
+main::-webkit-scrollbar-track {
+  background: transparent;      
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: var(--gamba);  
+  border-radius: 20px;     
+}
+
+.infoCompra{
+    display: none;
+}
+
+
+

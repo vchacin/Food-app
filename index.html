@@ -1,144 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
-        <!-- Favicon -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
         <link rel="icon" href="assets/img/gamba.ico" type="image/x-icon">
         <link rel="stylesheet" href="assets/css/styles.css">
         <title>Gamba | Delivery</title> 
     </head>
     <body>
         <header> 
-
-            <!-- Componente header 1 -->
-            <div>
-                <img src="assets/img/logo.png" alt="logo">
-                <h1>Comida a domicilio</h1>
-                <p>Los pucheros de tu abuelita en 20 min o gratis ;*]</p>
+            <div class="infoHome">
+                <img src="assets/img/logo.png" alt="logo" onclick="imprimirMenuCompleto()">
+                <div class= "titulo">
+                    <h1>Comida a domicilio</h1>
+                    <p>Los pucheros de tu abuelita en 20 min o gratis :)</p>
+                </div>
             </div>
+            <div class="infoCompra">
+            <div class="header-list">
+              
+                <div>
+                    <i class="fas fa-chevron-left fa-3x" onclick="getBack()"></i>
+                </div>
 
-            <!-- Componente Slides -->
-             <nav>
-                 <button>
-                     <img src="assets/img/desayuno.png" alt="desayuno">
-                     <p>Desayunos</p>
-                </button>
-
-                <button>
-                    <img src="assets/img/rapida.png" alt="comidas">
-                    <p>Comidas</p>
-               </button>
-
-               <button>
-                    <img src="assets/img/cena.png" alt="cena">
-                    <p>Cenas</p>
-                </button>
-
-                <button>
-                    <img src="assets/img/postre.png" alt="postres">
-                    <p>Postres</p>
-                </button>
-            </nav>
-
-            <!-- Componente header 2 -->
-            
-            <div>
-                <img src="assets/img/left.svg" width="20">
-                <img src="assets/img/trash.svg" width="20">
+                <i class="far fa-trash-alt fa-3x"></i>
             </div>
-
+        </div>
         </header>
+
+        <nav class="infoHome">
+            <button class= "slider Desayunos" onclick="imprimirMenu('Desayunos')">
+                 <img src="assets/img/desayuno.png" alt="desayunos">
+                 <p>Desayunos</p>
+            </button>
+
+            <button class= "slider Comidas" onclick="imprimirMenu('Comidas')">
+                <img src="assets/img/rapida.png" alt="comidas">
+                <p>Comidas</p>
+           </button>
+
+           <button class= "slider Cenas" onclick="imprimirMenu('Cenas')">
+                <img src="assets/img/cena.png" alt="cena">
+                <p>Cenas</p>
+            </button>
+
+            <button class= "slider Postres" onclick="imprimirMenu('Postres')">
+                <img src="assets/img/postre.png" alt="postres">
+                <p>Postres</p>
+            </button>
+
+            <button class= "slider Bebidas" onclick="imprimirMenu('Bebidas')">
+                <img src="assets/img/cocktails.svg" alt="bebidas">
+                <p>Bebidas</p>
+            </button>
+
+            <button class= "slider Entrantes" onclick="imprimirMenu('Entrantes')">
+                <img src="assets/img/mate.svg" alt="entrantes">
+                <p>Entrantes</p>
+            </button>
+        </nav>
         
         <main>
 
-            <!-- Componente Menu -->
-            <section>
-                <img src="assets/img/curry.png" alt="curry">
-                <h2>$52.00</h2>
-                <h3>Curry de Cordero</h3>
-                <p>Con arroz bastami</p>
-                <div>
-                    <div>-</div>
-                    <p>0</p>
-                    <div>+</div>
+            <div class="contenedor-menu"></div>
+
+            <section class="infoCompra">
+                <div class="compra">
+                    <table>
+                        <tr>
+                            <td>
+                                <p>Subtotal</p>
+                            </td>
+                            <td>
+                                <h4>$96.00</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Impuestos</p>
+                            </td>
+                            <td>
+                                <h4>$2.00</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Envío</p>
+                            </td>
+                            <td>
+                                <h4>Gratis</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>TOTAL</p>
+                            </td>
+                            <td>
+                                <h4>$98.00</h4>
+                            </td>
+                        </tr>
+                        <tr class="btn">
+                            <td colspan = "2">
+                                <button>Enviar pedido</button>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </section>
-
-            <section>
-                <img src="assets/img/salad.png" alt="salad">
-                <h2>$23.00</h2>
-                <h3>Ensalada de Pollo Vegana</h3>
-                <p>Con salsa de queso</p>
-                <div>
-                    <div>-</div>
-                    <p>0</p>
-                    <div>+</div>
-                </div>
-            </section>
-
-            <section>
-                <img src="assets/img/fries.png" alt="fries">
-                <h2>$21.00</h2>
-                <h3>Patatas Francesas</h3>
-                <p>Con carne de tocino</p>
-                <div>
-                    <div>-</div>
-                    <p>0</p>
-                    <div>+</div>
-                </div>
-            </section>
-
-            <!-- Componente Compra -->
-            <section>
-                <table>
-                    <tr>
-                        <td>
-                            <p>Subtotal</p>
-                        </td>
-                        <td>
-                            <h4>$96.00</h4>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Impuestos</p>
-                        </td>
-                        <td>
-                            <h4>$2.00</h4>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Envío</p>
-                        </td>
-                        <td>
-                            <h4>Gratis</h4>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>TOTAL</p>
-                        </td>
-                        <td>
-                            <h4>$98.00</h4>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button>Enviar pedido</button>
-                        </td>
-                    </tr>
-                </table>
-            </section>
-
         </main>
 
-        <footer>
-                <img src="assets/img/home-solid.svg" width="20">
-                <div>
-                    <img src="assets/img/shopping-cart-solid.svg" width="30">
+        <footer class="infoHome">
+            <div class=contenedor>
+                <i class="fas fa-home gray" onclick="imprimirMenu()"></i>
+                <div class="btn-compra">
+                    <i class="fas fa-shopping-cart my-float" onclick="compra()"></i>
                 </div>
-                <img src="assets/img/user-solid.svg" width="17">
+                <i class="fas fa-user gray" onclick="compra()"></i>
+            </div>
         </footer>
-
+        <script src="assets/js/displayPantalla.js"></script>
+        <script src="assets/js/listadoMenu.js"></script>
+        <script src="assets/js/filtroNavbar.js"></script>
+        <script src="assets/js/contador.js"></script>
     </body>
 </html>
