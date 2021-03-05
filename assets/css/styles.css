@@ -102,6 +102,7 @@
   footer {
     height: 80px;
     padding-top: 10px;
+    position: sticky;
   }
 
   footer .contenedor i {
