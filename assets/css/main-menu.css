@@ -10,15 +10,15 @@ section.menu {
 
 section.menu:hover {
     border:3px solid var(--gamba);
-    animation: moverDerecha 1s;
+    animation: scala 1s;
     animation-fill-mode: forwards;  
 }
-@keyframes moverDerecha {
+@keyframes scala {
     0% {
-        transform: translateX(0);
+        transform: scale(1);
     }
     100% {
-        transform: translateX(60px);
+        transform: scale(1.02);
     }
 }
 

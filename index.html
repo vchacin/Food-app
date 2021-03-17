@@ -9,7 +9,7 @@
     <body>
         <header> 
             <div class="infoHome">
-                <img src="assets/img/logo.png" alt="logo" onclick="imprimirMenuCompleto()">
+                <img src="assets/img/logo.png" alt="logo" onclick="Menu.filterMenu(null)">
                 <div class= "titulo">
                     <h1>Comida a domicilio</h1>
                     <p>Los pucheros de tu abuelita en 20 min o gratis :)</p>
@@ -22,38 +22,38 @@
                     <i class="fas fa-chevron-left fa-3x" onclick="getBack()"></i>
                 </div>
 
-                <i class="far fa-trash-alt fa-3x"></i>
+                <i class="far fa-trash-alt fa-3x" onclick="Cart.Clean()"></i>
             </div>
         </div>
         </header>
 
         <nav class="infoHome">
-            <button class= "slider Desayunos" onclick="imprimirMenu('Desayunos')">
+            <button class= "slider Desayunos" onclick="Menu.filterMenu('Desayunos')">
                  <img src="assets/img/desayuno.png" alt="desayunos">
                  <p>Desayunos</p>
             </button>
 
-            <button class= "slider Comidas" onclick="imprimirMenu('Comidas')">
+            <button class= "slider Comidas" onclick="Menu.filterMenu('Comidas')">
                 <img src="assets/img/rapida.png" alt="comidas">
                 <p>Comidas</p>
            </button>
 
-           <button class= "slider Cenas" onclick="imprimirMenu('Cenas')">
+           <button class= "slider Cenas" onclick="Menu.filterMenu('Cenas')">
                 <img src="assets/img/cena.png" alt="cena">
                 <p>Cenas</p>
             </button>
 
-            <button class= "slider Postres" onclick="imprimirMenu('Postres')">
+            <button class= "slider Postres" onclick="Menu.filterMenu('Postres')">
                 <img src="assets/img/postre.png" alt="postres">
                 <p>Postres</p>
             </button>
 
-            <button class= "slider Bebidas" onclick="imprimirMenu('Bebidas')">
+            <button class= "slider Bebidas" onclick="Menu.filterMenu('Bebidas')">
                 <img src="assets/img/cocktails.svg" alt="bebidas">
                 <p>Bebidas</p>
             </button>
 
-            <button class= "slider Entrantes" onclick="imprimirMenu('Entrantes')">
+            <button class= "slider Entrantes" onclick="Menu.filterMenu('Entrantes')">
                 <img src="assets/img/mate.svg" alt="entrantes">
                 <p>Entrantes</p>
             </button>
@@ -62,6 +62,7 @@
         <main>
 
             <div class="contenedor-menu"></div>
+            <div id="contenedor-items"></div>
 
             <section class="infoCompra">
                 <div class="compra">
@@ -71,7 +72,7 @@
                                 <p>Subtotal</p>
                             </td>
                             <td>
-                                <h4>$96.00</h4>
+                                <h4 id="subtotal"></h4>
                             </td>
                         </tr>
                         <tr>
@@ -79,7 +80,7 @@
                                 <p>Impuestos</p>
                             </td>
                             <td>
-                                <h4>$2.00</h4>
+                                <h4 id="impuestos"></h4>
                             </td>
                         </tr>
                         <tr>
@@ -95,7 +96,7 @@
                                 <p>TOTAL</p>
                             </td>
                             <td>
-                                <h4>$98.00</h4>
+                                <h4 id="total"></h4>
                             </td>
                         </tr>
                         <tr class="btn">
@@ -110,16 +111,23 @@
 
         <footer class="infoHome">
             <div class=contenedor>
-                <i class="fas fa-home gray" onclick="imprimirMenuCompleto()"></i>
+                <i class="fas fa-home gray" onclick="Menu.filterMenu(null)"></i>
                 <div class="btn-compra">
                     <i class="fas fa-shopping-cart my-float" onclick="compra()"></i>
                 </div>
                 <i class="fas fa-user gray" onclick="compra()"></i>
             </div>
         </footer>
+        <script src="assets/js/common.js"></script>
+        <script src="assets/js/productos.js"></script>
+        <script src="assets/js/carrito.js"></script>
+        <script src="assets/js/menu.js"></script>
         <script src="assets/js/displayPantalla.js"></script>
-        <script src="assets/js/listadoMenu.js"></script>
-        <script src="assets/js/filtroNavbar.js"></script>
         <script src="assets/js/contador.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                Menu.filterMenu(null);
+            });
+        </script>
     </body>
 </html>
